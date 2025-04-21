@@ -83,6 +83,7 @@
 	</dependency>       
 
   
+   <!-- Allure Cucumber JVM -->
     <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber7-jvm -->
     
 	<dependency>
@@ -91,15 +92,7 @@
     	<version>2.29.1</version>
 	</dependency>
 
-        <!-- Allure Cucumber JVM -->
-        
-    <dependency>
-    	<groupId>io.qameta.allure</groupId>
-    	<artifactId>allure-cucumber7-jvm</artifactId>
-    	<version>2.29.1</version>
-	</dependency>
-		
-		
+    		
 	<!--Aspectj Dependency for the functionality of @Step and @Attachment annotations in allure reports-->
     <!-- AspectJ for Allure Annotations -->
     
@@ -172,22 +165,23 @@
             </plugin>
             
             
-             <!-- Clean Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.3.1</version>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>${project.build.directory}/allure-results-${build.timestamp}</directory>
-                        </fileset>
+             <!-- Clean Plugin (clears previous allure-results with timestamp support) -->
+             
+              <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-clean-plugin</artifactId>
+              	 <version>3.3.1</version>
+                  <configuration>
+                      <filesets>
+                          <fileset>
+                              <directory>${project.build.directory}/allure-results-${build.timestamp}</directory>
+                         </fileset>
                     </filesets>
                 </configuration>
             </plugin>
                         
         
-         <!-- Build Helper: Set Timestamp -->
+         <!-- Build Helper: Adds ${build.timestamp} property -->
          
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -204,31 +198,38 @@
               <name>build.timestamp</name>
               <pattern>yyyyMMdd-HHmmss</pattern>
             </configuration>
-          </execution>
+          </execution>   
+          
         </executions>
       </plugin>
-             
+      
+      
+         
+          
+      
+      
+            
         
       <!-- Allure Maven Plugin -->
       <!-- Allure Report Generation -->
       
-           <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.15.0</version>
-                <executions>
-                    <execution>
-                        <id>allure-report</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <reportDirectory>${project.build.directory}/allure-report-${build.timestamp}</reportDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+      <!--      <plugin>-->
+       <!--          <groupId>io.qameta.allure</groupId>-->
+            <!--     <artifactId>allure-maven</artifactId>-->
+        <!--         <version>2.15.0</version>-->
+         <!--        <executions>-->
+          <!--           <execution>-->
+           <!--              <id>allure-report</id>-->
+            <!--             <phase>verify</phase>-->
+             <!--            <goals>-->
+            <!--                 <goal>report</goal-->
+              <!--           </goals>-->
+               <!--          <configuration>-->
+               <!--              <reportDirectory>${project.build.directory}/allure-report-${build.timestamp}</reportDirectory>-->
+               <!--          </configuration>-->
+             <!--        </execution>-->
+          <!--       </executions>-->
+             <!-- </plugin>-->
                                                      
 
         </plugins>
