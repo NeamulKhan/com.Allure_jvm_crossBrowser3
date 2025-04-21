@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-21T00:14:46 EDT" name="Surefire suite" finished-at="2025-04-21T00:14:52 EDT" duration-ms="5985">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-04-21T00:14:46 EDT" name="Surefire test" finished-at="2025-04-21T00:14:52 EDT" duration-ms="5985">
+      <class name="testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" started-at="2025-04-21T00:14:46 EDT" name="setUp" finished-at="2025-04-21T00:14:48 EDT" duration-ms="2077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" started-at="2025-04-21T00:14:48 EDT" name="setUpClass" finished-at="2025-04-21T00:14:49 EDT" duration-ms="939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3095d06b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" started-at="2025-04-21T00:14:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-21T00:14:51 EDT" duration-ms="1668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the slider transitions in a repeating loop"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automatic Slider Transition Loop"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" started-at="2025-04-21T00:14:51 EDT" name="tearDownClass" finished-at="2025-04-21T00:14:52 EDT" duration-ms="1069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@66bacdbc]" started-at="2025-04-21T00:14:52 EDT" name="tearDown" finished-at="2025-04-21T00:14:52 EDT" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
