@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-21T16:56:18 EDT" name="Surefire suite" finished-at="2025-04-21T16:56:24 EDT" duration-ms="6159">
+  <suite started-at="2025-04-22T02:12:29 EDT" name="Cucumber Test Suite" finished-at="2025-04-22T02:12:35 EDT" duration-ms="6026">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-21T16:56:18 EDT" name="Surefire test" finished-at="2025-04-21T16:56:24 EDT" duration-ms="6159">
+    <test started-at="2025-04-22T02:12:29 EDT" name="Cucumber Tests" finished-at="2025-04-22T02:12:35 EDT" duration-ms="6026">
       <class name="testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" started-at="2025-04-21T16:56:18 EDT" name="setUp" finished-at="2025-04-21T16:56:20 EDT" duration-ms="2022" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" started-at="2025-04-22T02:12:29 EDT" name="setUp" finished-at="2025-04-22T02:12:31 EDT" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" started-at="2025-04-21T16:56:20 EDT" name="setUpClass" finished-at="2025-04-21T16:56:21 EDT" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" started-at="2025-04-22T02:12:31 EDT" name="setUpClass" finished-at="2025-04-22T02:12:32 EDT" duration-ms="902" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b33deed]]>
+                <![CDATA[org.testng.TestRunner@3516f436]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" started-at="2025-04-21T16:56:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-21T16:56:23 EDT" duration-ms="1974" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" started-at="2025-04-22T02:12:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-22T02:12:34 EDT" duration-ms="1796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" started-at="2025-04-21T16:56:23 EDT" name="tearDownClass" finished-at="2025-04-21T16:56:24 EDT" duration-ms="1119" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" started-at="2025-04-22T02:12:34 EDT" name="tearDownClass" finished-at="2025-04-22T02:12:35 EDT" duration-ms="1093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@453d496b]" started-at="2025-04-21T16:56:24 EDT" name="tearDown" finished-at="2025-04-21T16:56:24 EDT" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3@78b41097]" started-at="2025-04-22T02:12:35 EDT" name="tearDown" finished-at="2025-04-22T02:12:35 EDT" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testRunnerAllure_jvm_crossBrowser3.TestRunnerAllure_jvm_crossBrowser3 -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Test Suite -->
 </testng-results>

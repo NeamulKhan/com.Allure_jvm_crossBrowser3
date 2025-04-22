@@ -154,6 +154,10 @@
                 <configuration>
                 
                 <testFailureIgnore>true</testFailureIgnore>
+                
+                	<suiteXmlFiles>
+                       <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                   	</suiteXmlFiles>
                    
               	<argLine>
               	
