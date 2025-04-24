@@ -28,10 +28,10 @@ public class TestRunnerAllure_jvm_crossBrowser3 extends AbstractTestNGCucumberTe
 		
 		public void setUp() {
 				
-			 AllureEnvironmentWriter.writeEnvironmentProperties();
+			AllureEnvironmentWriter.writeEnvironmentProperties();
 			test = new BaseClassAllure_jvm_crossBrowser3  (); // Initialize the instance variable
 	        test.allure_jvm_crossBrowser3_initializeDriver();
-	      //  AllureEnvironmentWriter.writeEnvironmentProperties();
+	      
 		}
 		
 		@AfterTest
