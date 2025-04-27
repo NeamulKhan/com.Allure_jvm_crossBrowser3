@@ -175,13 +175,13 @@
                  <groupId>org.apache.maven.plugins</groupId>
                  <artifactId>maven-clean-plugin</artifactId>
               	 <version>3.3.1</version>
-                  <configuration>
-                      <filesets>
-                          <fileset>
-                              <directory>${project.build.directory}/allure-results-${build.timestamp}</directory>
-                         </fileset>
-                    </filesets>
-                </configuration>
+          <!--        <configuration>-->
+            <!--          <filesets>-->
+           <!--               <fileset>-->
+           <!--                   <directory>${project.build.directory}/allure-results-${build.timestamp}</directory>-->
+           <!--              </fileset>-->
+          <!--          </filesets>-->
+        <!--        </configuration>-->
             </plugin>
                         
         
@@ -209,7 +209,21 @@
       
       
          
-          
+        <plugin>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.15.0</version> <!-- or your version -->
+            <configuration>
+                <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>   
       
       
             

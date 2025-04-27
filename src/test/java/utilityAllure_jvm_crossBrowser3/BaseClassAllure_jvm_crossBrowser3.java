@@ -1,5 +1,6 @@
 package utilityAllure_jvm_crossBrowser3;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,6 +24,13 @@ public class BaseClassAllure_jvm_crossBrowser3 {
 	
 	//No need input stream if we fetch data from data table and no properties file presence 
 	public  BaseClassAllure_jvm_crossBrowser3 () {
+		
+		 // 🔥 Set Allure results directory as soon as BaseClass is created
+	  //  System.setProperty("allure.results.directory", "target/allure-results");
+	    
+	 // 🔧 Create the directory if it doesn't exist
+	 //   new File("target/allure-results").mkdirs();
+	    
 				
 	try {
 		FileInputStream file = new FileInputStream ("src/test/resource/allure_jvm_crossBrowser3.config/Allure_jvm_crossBrowser3.properties");
@@ -63,7 +71,7 @@ public class BaseClassAllure_jvm_crossBrowser3 {
 		
 	//	String browser = crossBrowser1_prop.getProperty("Browser");
 		
-		String browserName = System.getProperty("browser", allure_jvm_crossBrowser3_prop.getProperty("Browser"));
+		String browserName = System.getProperty("browser", allure_jvm_crossBrowser3_prop.getProperty("browser"));
 		
 		switch (browserName.toLowerCase()) {
 		
@@ -79,6 +87,9 @@ public class BaseClassAllure_jvm_crossBrowser3 {
 	        
 	    default:
 	        throw new IllegalStateException("Unsupported browser: " + browserName);
+	        
+	        // write the browser name to Allure environment
+	      //  AllureEnvironmentWriter.writeEnvironmentProperties(browser);
 	}
 		
 			
