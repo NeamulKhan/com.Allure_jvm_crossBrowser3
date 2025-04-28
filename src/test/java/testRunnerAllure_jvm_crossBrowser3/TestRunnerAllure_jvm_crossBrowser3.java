@@ -1,5 +1,7 @@
 package testRunnerAllure_jvm_crossBrowser3;
 
+import java.util.Properties;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -32,7 +34,10 @@ public class TestRunnerAllure_jvm_crossBrowser3 extends AbstractTestNGCucumberTe
 		//	AllureEnvironmentWriter.writeEnvironmentProperties();
 			test = new BaseClassAllure_jvm_crossBrowser3  (); // Initialize the instance variable
 	        test.allure_jvm_crossBrowser3_initializeDriver();
-	        AllureEnvironmentWriter.writeEnvironmentProperties("browser"); // <-- after driver initialized
+	     //   AllureEnvironmentWriter.writeEnvironmentProperties(); // <-- after driver initialized
+	        
+	        
+	        
 		}
 		
 		@AfterTest

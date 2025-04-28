@@ -96,6 +96,11 @@ public class BaseClassAllure_jvm_crossBrowser3 {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Initialize WebDriverWait here
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		
+		Properties configProps = BaseClassAllure_jvm_crossBrowser3.allure_jvm_crossBrowser3_prop;
+		AllureEnvironmentWriter.writeEnvironmentProperties(driver, configProps);
+		
+	//	AllureEnvironmentWriter.writeEnvironmentProperties();
 			
 		}
 
